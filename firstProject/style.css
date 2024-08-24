@@ -1,0 +1,656 @@
+ /* Base styles (apply to all screen sizes) */
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 99%;
+}
+/* HEADER */
+
+
+.header {
+    position: fixed;
+    width: 97%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.icon {
+    height: 6%;
+    width: 5%;
+}
+ .logo {
+     font-size: 30px;
+     font-weight: bold;
+     margin-left: 10px;
+ }
+
+ nav ul {
+     list-style: none;
+     display: flex;
+     gap: 40px;
+     margin: 0;
+     padding: 0;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: darkorange;
+     font-weight: bold;
+ }
+
+ .colour {
+     color: black;
+ }
+
+ .colour:hover {
+     color: darkorange;
+     text-decoration: underline;
+ }
+
+/* MAIN */
+
+ .hero {
+     background-image: url('/images/image1.png');
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding-right: 50px;
+ }
+
+ .hero-content {
+     background-color: rgba(0, 0, 0, 0.7);
+     padding: 20px;
+     color: white;
+     text-align: center;
+     width: 25%;
+     height: 70%;
+     margin-top: 660px;
+ }
+
+ .hero-content h2 {
+     margin: 0 0 20px;
+     font-size: 24px;
+ }
+
+ .hero-content h2 span {
+     color: darkorange;
+     font-size: 28px;
+ }
+
+ .notification-form {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+
+ .input-container {
+     position: relative;
+ }
+
+ .input-icon {
+     position: absolute;
+     top: 50%;
+     right: 10px;
+     /* Right-aligned icons */
+     transform: translateY(-50%);
+     width: 20px;
+     height: 20px;
+ }
+
+ .notification-form input {
+     padding: 10px 20px 10px 10px;
+     /* Adjusted padding for icons */
+     border: none;
+     border-radius: 5px;
+     width: 90%;
+
+ }
+
+ .notification-form button {
+     padding: 10px;
+     background-color: darkorange;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .after-image {
+     color: white;
+     background-color: rgb(39, 39, 39);
+     padding: 50px;
+     text-align: left;
+ }
+
+ .heading1 {
+     display: flex;
+     justify-content: flex-start;
+ }
+
+ .heading2 {
+     display: flex;
+     justify-content: flex-start;
+     font-weight: 100px;
+     font-size: 50px;
+ }
+
+ .p {
+     display: flex;
+     justify-content: flex-start;
+     margin-bottom: 0px;
+     font-size: small;
+ }
+
+ .button {
+     margin-top: 120px;
+     font-weight: bolder;
+ }
+
+ .button:hover {
+     background-color: orange;
+ }
+
+ .container {
+     width: 100%;
+     margin: 0 auto;
+     background-color: white;
+     padding: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .content {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .text-section {
+     width: 40%;
+ }
+
+ .text-section h2 {
+     font-size: 24px;
+     margin-bottom: 20px;
+     padding-left: 50px;
+
+ }
+
+ .text-section ul {
+     list-style: none;
+     padding: 0;
+     padding-left: 50px;
+ }
+
+ .text-section ul li {
+     font-size: 18px;
+     margin-bottom: 10px;
+     position: relative;
+     padding-left: 50px;
+ }
+
+ .text-section ul li:before {
+     content: "✔";
+     color: darkorange;
+     font-size: 20px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     margin-left: 10px;
+ }
+
+ .image-section {
+     width: 55%;
+ }
+
+ .image-section img {
+     margin-top: 90px;
+     width: 90%;
+     height: auto;
+     max-height: 300px;
+     /* Limit the height */
+     object-fit: cover;
+     /* Ensure the image covers the area */
+     border-radius: 5px;
+ }
+
+
+ .navigation {
+     text-align: center;
+     margin-top: 20px;
+     margin-left: 1100px;
+ }
+
+ .nav-btn {
+     background-color: darkorange;
+     border: none;
+     padding: 10px 20px;
+     color: white;
+     font-size: 18px;
+     cursor: pointer;
+     margin: 0 5px;
+     border-radius: 3px;
+ }
+
+ .nav-btn:hover {
+     background-color: orange;
+ }
+
+ .dots {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+     margin-left: 550px;
+ }
+
+ .dot {
+     height: 10px;
+     width: 10px;
+     background-color: #ada7a7;
+     border-radius: 50%;
+     display: inline-block;
+     margin: 0 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+
+ }
+
+ .dot.active,
+ .dot:hover {
+     background-color: orange;
+ }
+
+
+ /* FOOTER */
+
+ .footer {
+     background-color: #eaeaea;
+     padding: 40px 20px;
+     font-family: Arial, sans-serif;
+ }
+
+ .footer h1 {
+     text-align: center;
+     color: #333;
+     margin-bottom: 20px;
+ }
+
+ .features {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 40px;
+ }
+
+ .feature-item {
+     text-align: center;
+     max-width: 30%;
+ }
+
+ .feature-item img {
+     width: 50px;
+     height: 50px;
+     margin-bottom: 15px;
+ }
+
+ .feature-item h3 {
+     font-size: 18px;
+     margin-bottom: 10px;
+     color: #333;
+ }
+
+ .feature-item p {
+     font-size: 14px;
+     color: #333;
+ }
+
+
+ .footer p {
+     text-align: center;
+     color: #333;
+     margin-top: 20px;
+ }
+
+ .container2 {
+     display: flex;
+     /* Flexbox layout */
+     align-items: center;
+     /* Vertically center items */
+     justify-content: flex-start;
+     /* Start items from left */
+     margin: 50px;
+     /* Margin for spacing around container */
+ }
+
+
+
+ .box h1 {
+     font-size: 24px;
+     font-weight: bold;
+     margin: 0 0 10px 0;
+     /* Small margin between headings */
+     color: azure;
+     text-align: left;
+     /* Left align the heading */
+ }
+
+ .box p {
+     font-size: 16px;
+     line-height: 1.5;
+     margin: 30px 0 20px 0;
+     color: aliceblue;
+ }
+
+ .box a {
+     display: inline-block;
+     background-color: darkorange;
+     color: white;
+     padding: 10px 20px;
+     text-decoration: none;
+     border-radius: 3px;
+     font-weight: bold;
+ }
+
+ .box a:hover {
+     background-color: orange;
+ }
+
+ .container3 {
+     display: flex;
+     /* Flexbox layout */
+     align-items: center;
+     /* Vertically center items */
+     justify-content: space-between;
+     /* Space between items */
+     margin: 50px;
+     /* Margin for spacing around container */
+ }
+
+
+
+ .box2 h1 {
+     font-size: 24px;
+     font-weight: bold;
+     margin: 0 0 20px 0;
+     color: azure;
+     text-align: left;
+     /* Left align the heading */
+ }
+
+ .box2 p {
+     font-size: 16px;
+     line-height: 1.5;
+     margin: 30px 0 20px 0;
+     color: aliceblue;
+ }
+
+ .box2 a {
+     display: inline-block;
+     background-color: darkorange;
+     color: white;
+     padding: 10px 20px;
+     text-decoration: none;
+     border-radius: 3px;
+     font-weight: bold;
+ }
+
+ .box2 a:hover {
+     background-color: orange;
+ }
+
+ .container3 img {
+     width: 1100px;
+     /* Adjusted width for image */
+     height: 550px;
+     /* Maintain aspect ratio */
+     margin-bottom: 300px;
+     margin-top: 0px;
+     margin-right: 80px;
+     padding: 0;
+ }
+
+ .box2 {
+     background-color: #333;
+     color: white;
+     width: 400px;
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0 4px 8px #333;
+     margin-top: 200px;
+     margin-right: 0px;
+     /* Add some space on the right side of the box */
+ }
+
+ .container2 img {
+     width: 700px;
+     /* Adjusted width for image */
+     height: 350px;
+     /* Maintain aspect ratio */
+     margin-left: 0px;
+     margin-bottom: 10px;
+     margin-top: 0;
+     padding: 0;
+ }
+
+ .box {
+     background-color: #333;
+     color: white;
+     width: 700px;
+     /* Adjusted width to match design */
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0 4px 8px #333;
+     margin-bottom: 200px;
+     margin-top: 0px;
+     margin-right: 80px;
+ }
+
+
+
+ .container2,
+ .container3 {
+     width: 100%;
+ }
+
+ hr {
+     border: none;
+     /* Remove default border */
+     border-top: 3px solid darkorange;
+     /* Set thickness and color */
+     margin-top: -100px;
+     /* Adjust top margin to move it up */
+     margin-bottom: -40px;
+     /* Adjust bottom margin */
+ }
+
+ .footer2 {
+     background-color: darkorange;
+     font-weight: bolder;
+     color: #333;
+     height: 40px;
+     width: 100%;
+     margin: 0;
+     /* Remove all margins */
+     padding: 0;
+     /* Remove all padding */
+     text-align: center;
+     line-height: 40px;
+     /* Vertically center the text */
+     position: fixed;
+     /* Fix footer at the bottom */
+     bottom: 0;
+     left: 0;
+ }
+
+
+ /* Styles for large screens (min-width: 2560px) */
+@media (min-width: 2560px) {
+    .icon {
+        height: 4%; /* Slightly reduce icon size for large screens */
+        width: 4%;  /* Slightly reduce icon size for large screens */
+    }
+
+    .hero-content {
+        width: 20%; /* Adjust width for larger screens */
+        height: 60%; /* Adjust height for larger screens */
+        margin-top: 500px; /* Adjust top margin for larger screens */
+        padding: 30px; /* Increase padding for better readability */
+    }
+
+    .text-section {
+        width: 35%; /* Adjust text section width */
+    }
+
+    .text-section h2 {
+        font-size: 32px; /* Increase font size for headings */
+    }
+
+    .text-section ul li {
+        font-size: 22px; /* Increase font size for list items */
+    }
+
+    .image-section img {
+        width: 80%; /* Increase image width */
+        max-height: 500px; /* Increase max height for better scaling */
+        object-fit: contain; /* Ensure image fits well within the container */
+    }
+
+    .footer {
+        padding: 60px 40px; /* Increase footer padding for larger screens */
+        font-size: 18px; /* Increase footer text size */
+    }
+
+    .feature-item {
+        max-width: 28%; /* Adjust feature item width */
+        margin-bottom: 30px; /* Add some spacing between feature items */
+    }
+}
+
+/* Responsive styles for Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .icon {
+        height: 30px; /* Adjust icon size for small screens */
+        width: 30px; /* Adjust icon size for small screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px; /* Reduce gap between navigation items */
+    }
+
+    .hero-content {
+        width: 90%; /* Adjust width to fit smaller screens */
+        height: auto; /* Let height adjust automatically */
+        margin-top: 10px; /* Reduce top margin */
+        padding: 15px; /* Ensure enough padding for readability */
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    .text-section,
+    .image-section {
+        width: 100%; /* Full width for small screens */
+        padding: 10px; /* Add padding around sections */
+    }
+
+    .text-section h2 {
+        font-size: 20px; /* Smaller font size for headings */
+    }
+
+    .text-section ul li {
+        font-size: 16px; /* Smaller font size for list items */
+    }
+
+    .image-section img {
+        width: 100%; /* Full width for images */
+        height: auto; /* Let height scale automatically */
+        max-height: 300px; /* Limit max height */
+        margin-top: 10px; /* Add margin to separate elements */
+    }
+
+    .footer {
+        padding: 20px; /* Reduced padding for smaller screens */
+        font-size: 14px; /* Smaller font size for footer text */
+    }
+
+    .feature-item {
+        max-width: 100%; /* Full width for features */
+        margin-bottom: 20px; /* Space between feature items */
+        text-align: center; /* Center text for better readability */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Tablets and small desktops (600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 15px;
+    }
+
+    .icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .hero-content {
+        width: 60%;
+        height: auto;
+        margin-top: 150px;
+        padding: 15px;
+    }
+
+    .notification-form input {
+        padding: 10px 35px 10px 10px;
+        /* Adjusted padding for icons */
+        border: none;
+        border-radius: 5px;
+        width: 90%;
+   
+    }
+    .navigation {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 800px;
+    }
+    .text-section {
+        width: 70%;
+    }
+
+    .image-section {
+        width: 75%;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+}
